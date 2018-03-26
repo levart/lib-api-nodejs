@@ -1,0 +1,36 @@
+{
+  "name": "twizo",
+  "version": "0.1.0",
+  "description": "Twizo makes online security simple through easy integration and a variety of authentication solutions. We serve customers globally allowing them to scale their businesses while we worry about their security.",
+  "main": "./lib/index",
+  "module": "./lib/rest_controllers/index",
+  "types": "./typings/index",
+  "readme": "README.md",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/dotenv": "^4.0.2",
+    "@types/node": "^9.4.7",
+    "ava": "^0.25.0",
+    "dotenv": "^5.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  },
+  "scripts": {
+    "test": "ava ./lib/tests/**",
+    "tsc": "tsc",
+    "tsc:watch": "tsc --watch"
+  },
+  "keywords": [
+    "2fa",
+    "sms"
+  ],
+  "author": "Rick Harmelink",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twizoapi/lib-api-nodejs.git"
+  }
+}

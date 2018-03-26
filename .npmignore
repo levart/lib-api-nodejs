@@ -1,0 +1,18 @@
+# src TS files
+src/*
+tsconfig.json
+tslint.json
+
+# test files
+lib/tests/*
+
+# env variables
+.env
+.example-env
+
+# docker files
+Dockerfile
+docker-compose.yml
+
+# other
+libraries.md

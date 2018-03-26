@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  twizo:
+    container_name: twizo_lib_nodejs
+    build: .
+    volumes:
+      - .:/home/app/twizo-lib-nodejs
+      - /home/app/twizo-lib-nodejs/node_modules
+      

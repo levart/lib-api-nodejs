@@ -1,0 +1,11 @@
+# npm dependencies
+node_modules/*
+
+# built TS files
+lib/*
+
+# built typings files
+typings/*
+
+# private variables
+.env
