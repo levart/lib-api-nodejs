@@ -26,7 +26,7 @@ export default class Verification {
      * 
      * @param type  This is an optional string parameter.
      *              The type defines how the token will be send to the phone.
-     *              Possible values are: ‘sms', ‘call’, 'push', 'telegram' or 'line'.
+     *              Possible values are: ‘sms', ‘call’, 'push', 'telegram', 'line' or 'facebook_messenger'.
      *              The default value is ‘sms’.
      */
     addType(type:string): void {
@@ -36,7 +36,7 @@ export default class Verification {
 
     /**
      * 
-     * @param issuer    This is a mandatory string parameter when the type is set to 'push', 'telegram' or 'line'.
+     * @param issuer    This is a mandatory string parameter when the type is set to 'push', 'telegram', 'line' or 'facebook_messenger'.
      *                  The issuer is the name of the site the user wants to login to.
      *                  When the user receives the request to confirm he wants to login, the user will get a message like "Please confirm to verify your login of '<issuer>'".
      */
@@ -113,9 +113,9 @@ export default class Verification {
      * Check if the Verification object is valid
      */
     isValid(): boolean {
-        if (this.type && (this.type !== "sms" || "call" || "push" || "telegram" || "line"))
+        if (this.type && (this.type !== "sms" || "call" || "push" || "telegram" || "line" || "facebook_messenger"))
         //type telegram or line, check issuer
-        if ((this.type === "telegram" || this.type === "line") && !this.issuer) return false;
+        if ((this.type === "telegram" || this.type === "line" || this.type === "facebook_messenger") && !this.issuer) return false;
         //tokenlength > 4 < 10
         if (this.tokenLength && (this.tokenLength < 4 || this.tokenLength > 10)) return false;
         //tokentype numeric or alphanumeric

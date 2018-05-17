@@ -1,4 +1,4 @@
-![Twizo](http://www.twizo.com/online/logo/twizo-logo.png) 
+![Twizo](http://www.twizo.com/online/logo/logo.png) 
 
 
 # Twizo Node.js API

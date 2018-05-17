@@ -1,6 +1,6 @@
 {
   "name": "twizo",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "description": "Twizo makes online security simple through easy integration and a variety of authentication solutions. We serve customers globally allowing them to scale their businesses while we worry about their security.",
   "main": "./lib/index",
   "module": "./lib/rest_controllers/index",
