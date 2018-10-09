@@ -6,7 +6,9 @@
   "module": "./lib/rest_controllers/index",
   "types": "./typings/index",
   "readme": "README.md",
-  "dependencies": {},
+  "dependencies": {
+    "deep-extend": "^0.6.0"
+  },
   "devDependencies": {
     "@types/dotenv": "^4.0.2",
     "@types/node": "^9.4.7",
